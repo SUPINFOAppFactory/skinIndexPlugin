@@ -1,0 +1,48 @@
+<div class="item clearfix row" ng-if="SettingsHome.data">
+  <div class="main pull-right col-md-9">
+    <div class="alert alert-danger alert-sm text-center"
+         ng-if="!SettingsHome.data.settings.apiKey">Please enter API Key to
+      find UV index
+    </div>
+  </div>
+</div>
+<br>
+<div class="item row clearfix" style="padding-bottom: 2%">
+  <div class="labels col-md-3 padding-right-zero pull-left">
+    <span>Account Type</span>
+  </div>
+  <div class="main pull-right col-md-9 padding-left-zero row">
+    <div class="radio radio-primary radio-inline">
+      <input id="channel" type="radio"
+             ng-model="SettingsHome.data.settings.type"
+             ng-value="SettingsHome.ACCOUNT_TYPE.FREE"
+             name="accountType" class="ng-pristine ng-untouched ng-valid" value="Free">
+      <label for="channel">Free</label>
+    </div>
+    <div class="radio radio-primary radio-inline">
+      <input id="video" type="radio"
+             ng-model="SettingsHome.data.settings.type"
+             ng-value="SettingsHome.ACCOUNT_TYPE.PREMIUM"
+             name="accountType" class="ng-pristine ng-untouched ng-valid" value="Premium">
+      <label for="video">Premium</label>
+    </div>
+  </div>
+</div>
+<div class="item row clearfix">
+  <div class="labels col-md-3 padding-right-zero pull-left">
+    <span>API key</span>
+  </div>
+  <div class="main col-md-9 pull-right">
+    <input id="url" name="url" type="text" class="form-control"
+           ng-model="SettingsHome.data.settings.apiKey">
+  </div>
+  <hr class="none">
+  <br>
+
+  <div class="item clearfix row">
+    <div class="col-md-9 pull-right">
+      <p>Dont have a World Weather Online account click <a
+          ng-click="SettingsHome.gotToPage()">here</a> to register</p>
+    </div>
+  </div>
+</div>

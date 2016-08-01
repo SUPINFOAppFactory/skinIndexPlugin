@@ -1,0 +1,22 @@
+{
+  "author":"SUPINFO AppFactory"
+,"pluginName":"UVO"
+,"pluginDescription":"With the UVO plugin, you can find the UV index and associated recommendations for your desired location.Related Topics: Weather"
+,"supportEmail":"supinfoappfactory@supinfo.com"
+,"control":{
+  "content":{
+    "enabled":false
+  }
+, "design":{
+    "enabled":true
+  }
+, "settings":{
+    "enabled":true
+  }
+}
+,"widget":{
+
+},
+  "features" : ["GEO"],
+  "languages" : ["en"]
+}
